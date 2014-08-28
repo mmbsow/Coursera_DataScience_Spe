@@ -52,3 +52,79 @@ In this section, we describe the transformations performed on the data.<br>
 5. A new second, independent tidy data set was created with the average of each variable calculated by subject and activity, using the aggregate() function. The grouping columns were relabeled "subject" and "activity" in the resulting tidy data frame.
 
 6. The final tidy data set from step 5 was written to a text file "tidy_data_set.txt". The output is space-separarated and includes the column header. Row indices are not included.
+
+==========
+
+### Data description:
+The list below presents the columns available in the tidy dataset:
+
+- subject: identifier for the subject
+- activity: categorical variable with the possible values: 1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING 6, LAYING
+- The features' means in the same unit as the features (see features_info.txt for details on the features):
+	- tBodyAcc-mean()-X
+	- tBodyAcc-mean()-Y
+	- tBodyAcc-mean()-Z
+	- tGravityAcc-mean()-X
+	- tGravityAcc-mean()-Y
+	- tGravityAcc-mean()-Z
+	- tBodyAccJerk-mean()-X
+	- tBodyAccJerk-mean()-Y
+	- tBodyAccJerk-mean()-Z
+	- tBodyGyro-mean()-X
+	- tBodyGyro-mean()-Y
+	- tBodyGyro-mean()-Z
+	- tBodyGyroJerk-mean()-X
+	- tBodyGyroJerk-mean()-Y
+	- tBodyGyroJerk-mean()-Z
+	- tBodyAccMag-mean()
+	- tGravityAccMag-mean()
+	- tBodyAccJerkMag-mean()
+	- tBodyGyroMag-mean()
+	- tBodyGyroJerkMag-mean()
+	- fBodyAcc-mean()-X
+	- fBodyAcc-mean()-Y
+	- fBodyAcc-mean()-Z
+	- fBodyAccJerk-mean()-X
+	- fBodyAccJerk-mean()-Y
+	- fBodyAccJerk-mean()-Z
+	- fBodyGyro-mean()-X
+	- fBodyGyro-mean()-Y
+	- fBodyGyro-mean()-Z
+	- fBodyAccMag-mean()
+	- fBodyBodyAccJerkMag-mean()
+	- fBodyBodyGyroMag-mean()
+	- fBodyBodyGyroJerkMag-mean()
+- The features' standard deviations in the same unit as the features (see features_info.txt for details on the features):
+	- tBodyAcc-std()-X
+	- tBodyAcc-std()-Y
+	- tBodyAcc-std()-Z
+	- tGravityAcc-std()-X
+	- tGravityAcc-std()-Y
+	- tGravityAcc-std()-Z
+	- tBodyAccJerk-std()-X
+	- tBodyAccJerk-std()-Y
+	- tBodyAccJerk-std()-Z
+	- tBodyGyro-std()-X
+	- tBodyGyro-std()-Y
+	- tBodyGyro-std()-Z
+	- tBodyGyroJerk-std()-X
+	- tBodyGyroJerk-std()-Y
+	- tBodyGyroJerk-std()-Z
+	- tBodyAccMag-std()
+	- tGravityAccMag-std()
+	- tBodyAccJerkMag-std()
+	- tBodyGyroMag-std()
+	- tBodyGyroJerkMag-std()
+	- fBodyAcc-std()-X
+	- fBodyAcc-std()-Y
+	- fBodyAcc-std()-Z
+	- fBodyAccJerk-std()-X
+	- fBodyAccJerk-std()-Y
+	- fBodyAccJerk-std()-Z
+	- fBodyGyro-std()-X
+	- fBodyGyro-std()-Y
+	- fBodyGyro-std()-Z
+	- fBodyAccMag-std()
+	- fBodyBodyAccJerkMag-std()
+	- fBodyBodyGyroMag-std()
+	- fBodyBodyGyroJerkMag-std()
