@@ -1,4 +1,8 @@
-# Source code for Project 2 of "Getting and Cleaning" Data class
+# Source code for "Getting and Cleaning" Data class project
+# the code below assumes that the working directory contains two folders
+# - train: containing the training data
+# - test: containing the test data
+
 
 # loads the X for train dataset
 Xtrain.init <- read.table("train/X_train.txt", nrows = 100)
@@ -39,6 +43,7 @@ dim(stest)
 # column-binds all the dataframes for the train set and for the test set
 train <- cbind(strain, Xtrain, ytrain)
 test <- cbind(stest, Xtest, ytest)
+
 # row-binds train and test sets
 dataset <- rbind(train, test)
 dim(dataset)
@@ -63,4 +68,4 @@ tidy.data <-aggregate(dataset[,keep.features], by=list(dataset$subject, dataset$
 colnames(tidy.data) <- c("subject", "activity", keep.features)
 
 # finally, writes tidy dataset into test file
-write.table(tidy.data, file="tidy_data_set.txt", row.names = TRUE)
+write.table(tidy.data, file="tidy_data_set.txt", row.names = FALSE)
