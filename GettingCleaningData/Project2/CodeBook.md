@@ -1,4 +1,4 @@
-# Getting and Cleaning Data - Course Project 2
+# Getting and Cleaning Data - Course Project
 ## Code Book
 
 =========
@@ -59,10 +59,10 @@ In this section, we describe the transformations performed on the data.<br>
 The list below presents the columns available in the tidy dataset:
 <br>
 
-- subject: identifier for the subject
+- *subject*: identifier for the subject
 <br>
 
-- activity: categorical variable with the possible values: 1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING 6, LAYING
+- *activity*: categorical variable with the possible values: 1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING 6, LAYING
 <br>
 
 - The features' means in the same unit as the features (see features_info.txt for details on the features):
@@ -72,67 +72,67 @@ The list below presents the columns available in the tidy dataset:
 	- *tGravityAcc-mean()-X*: mean value for gravity acceleration signals in X dimension
 	- *tGravityAcc-mean()-Y*: mean value for gravity acceleration signals in Y dimension
 	- *tGravityAcc-mean()-Z*: mean value for gravity acceleration signals in Z dimension
-	- tBodyAccJerk-mean()-X: mean value for jerk signals for body linear acceleration in X dimension
-	- tBodyAccJerk-mean()-Y: mean value for jerk signals for body linear acceleration in Y dimension
-	- tBodyAccJerk-mean()-Z: mean value for jerk signals for body linear acceleration in Z dimension
-	- tBodyGyro-mean()-X: mean value for body angular velocity signals in X dimension
-	- tBodyGyro-mean()-Y: mean value for body angular velocity signals in Y dimension
-	- tBodyGyro-mean()-Z: mean value for body angular velocity signals in Z dimension
-	- tBodyGyroJerk-mean()-X: mean value for jerk signals for body angular velocity in X dimension
-	- tBodyGyroJerk-mean()-Y: mean value for jerk signals for body angular velocity in Y dimension
-	- tBodyGyroJerk-mean()-Z: mean value for jerk signals for body angular velocity in Z dimension
-	- tBodyAccMag-mean(): mean value for body acceleration signals' magnitude
-	- tGravityAccMag-mean(): mean value for gravity acceleration signals' magnitude
-	- tBodyAccJerkMag-mean(): mean value for jerk signals' magnitude for body linear acceleration
-	- tBodyGyroMag-mean(): mean value for body angular velocity signals' magnitude
-	- tBodyGyroJerkMag-mean(): mean value for jerk signals' magnitude for body angular velocity
-	- fBodyAcc-mean()-X: mean value for Fast Fourier Transform (FFT) for body acceleration signals in X dimension
-	- fBodyAcc-mean()-Y: mean value for FFT for body acceleration signals in Y dimension
-	- fBodyAcc-mean()-Z: mean value for FFT for body acceleration signals in Z dimension
-	- fBodyAccJerk-mean()-X: mean value for FFT for jerk signals for body linear acceleration in X dimension
-	- fBodyAccJerk-mean()-Y: mean value for FFT for jerk signals for body linear acceleration in Y dimension
-	- fBodyAccJerk-mean()-Z: mean value for FFT for jerk signals for body linear acceleration in Z dimension
-	- fBodyGyro-mean()-X: mean value for FFT for body angular velocity signals in X dimension
-	- fBodyGyro-mean()-Y: mean value for FFT for body angular velocity signals in Y dimension
-	- fBodyGyro-mean()-Z: mean value for FFT for body angular velocity signals in Z dimension
-	- fBodyAccMag-mean(): mean value for FFT for body acceleration signals' magnitude
-	- fBodyBodyAccJerkMag-mean(): mean value for FFT for jerk signals' magnitude for body linear acceleration
-	- fBodyBodyGyroMag-mean(): mean value for FFT for body angular velocity signals' magnitude
-	- fBodyBodyGyroJerkMag-mean(): mean value for FFT for jerk signals' magnitude for body angular velocity
+	- *tBodyAccJerk-mean()-X*: mean value for jerk signals for body linear acceleration in X dimension
+	- *tBodyAccJerk-mean()-Y*: mean value for jerk signals for body linear acceleration in Y dimension
+	- *tBodyAccJerk-mean()-Z*: mean value for jerk signals for body linear acceleration in Z dimension
+	- *tBodyGyro-mean()-X*: mean value for body angular velocity signals in X dimension
+	- *tBodyGyro-mean()-Y*: mean value for body angular velocity signals in Y dimension
+	- *tBodyGyro-mean()-Z*: mean value for body angular velocity signals in Z dimension
+	- *tBodyGyroJerk-mean()-X*: mean value for jerk signals for body angular velocity in X dimension
+	- *tBodyGyroJerk-mean()-Y*: mean value for jerk signals for body angular velocity in Y dimension
+	- *tBodyGyroJerk-mean()-Z*: mean value for jerk signals for body angular velocity in Z dimension
+	- *tBodyAccMag-mean()*: mean value for body acceleration signals' magnitude
+	- *tGravityAccMag-mean()*: mean value for gravity acceleration signals' magnitude
+	- *tBodyAccJerkMag-mean()*: mean value for jerk signals' magnitude for body linear acceleration
+	- *tBodyGyroMag-mean()*: mean value for body angular velocity signals' magnitude
+	- *tBodyGyroJerkMag-mean()*: mean value for jerk signals' magnitude for body angular velocity
+	- *fBodyAcc-mean()-X*: mean value for Fast Fourier Transform (FFT) for body acceleration signals in X dimension
+	- *fBodyAcc-mean()-Y*: mean value for FFT for body acceleration signals in Y dimension
+	- *fBodyAcc-mean()-Z*: mean value for FFT for body acceleration signals in Z dimension
+	- *fBodyAccJerk-mean()-X*: mean value for FFT for jerk signals for body linear acceleration in X dimension
+	- *fBodyAccJerk-mean()-Y*: mean value for FFT for jerk signals for body linear acceleration in Y dimension
+	- *fBodyAccJerk-mean()-Z*: mean value for FFT for jerk signals for body linear acceleration in Z dimension
+	- *fBodyGyro-mean()-X*: mean value for FFT for body angular velocity signals in X dimension
+	- *fBodyGyro-mean()-Y*: mean value for FFT for body angular velocity signals in Y dimension
+	- *fBodyGyro-mean()-Z*: mean value for FFT for body angular velocity signals in Z dimension
+	- *fBodyAccMag-mean()*: mean value for FFT for body acceleration signals' magnitude
+	- *fBodyBodyAccJerkMag-mean()*: mean value for FFT for jerk signals' magnitude for body linear acceleration
+	- *fBodyBodyGyroMag-mean()*: mean value for FFT for body angular velocity signals' magnitude
+	- *fBodyBodyGyroJerkMag-mean()*: mean value for FFT for jerk signals' magnitude for body angular velocity
 <br>
 
 - The features' standard deviations in the same unit as the features (see features_info.txt for details on the features):
-	- tBodyAcc-std()-X: standard deviation value for body acceleration signals in X dimension
-	- tBodyAcc-std()-Y: standard deviation value for body acceleration signals in Y dimension
-	- tBodyAcc-std()-Z: standard deviation value for body acceleration signals in Z dimension
-	- tGravityAcc-std()-X: standard deviation value for gravity acceleration signals in X dimension
-	- tGravityAcc-std()-Y: standard deviation value for gravity acceleration signals in Y dimension
-	- tGravityAcc-std()-Z: standard deviation value for gravity acceleration signals in Z dimension
-	- tBodyAccJerk-std()-X: standard deviation value for jerk signals for body linear acceleration in X dimension
-	- tBodyAccJerk-std()-Y: standard deviation value for jerk signals for body linear acceleration in Y dimension
-	- tBodyAccJerk-std()-Z: standard deviation value for jerk signals for body linear acceleration in Z dimension
-	- tBodyGyro-std()-X: standard deviation value for body angular velocity signals in X dimension
-	- tBodyGyro-std()-Y: standard deviation value for body angular velocity signals in Y dimension
-	- tBodyGyro-std()-Z: standard deviation value for body angular velocity signals in Z dimension
-	- tBodyGyroJerk-std()-X: standard deviation value for jerk signals for body angular velocity in X dimension
-	- tBodyGyroJerk-std()-Y: standard deviation value for jerk signals for body angular velocity in Y dimension
-	- tBodyGyroJerk-std()-Z: standard deviation value for jerk signals for body angular velocity in Z dimension
-	- tBodyAccMag-std(): standard deviation value for body acceleration signals' magnitude
-	- tGravityAccMag-std(): standard deviation value for gravity acceleration signals' magnitude
-	- tBodyAccJerkMag-std(): standard deviation value for jerk signals' magnitude for body linear acceleration
-	- tBodyGyroMag-std(): standard deviation value for body angular velocity signals' magnitude
-	- tBodyGyroJerkMag-std(): standard deviation value for jerk signals' magnitude for body linear acceleration
-	- fBodyAcc-std()-X: standard deviation value for Fast Fourier Transform (FFT) for body acceleration signals in X dimension
-	- fBodyAcc-std()-Y: standard deviation value for FFT for body acceleration signals in Y dimension
-	- fBodyAcc-std()-Z: standard deviation value for FFT for body acceleration signals in Z dimension
-	- fBodyAccJerk-std()-X: standard deviation value for FFT for jerk signals for body linear acceleration in X dimension
-	- fBodyAccJerk-std()-Y: standard deviation value for FFT for jerk signals for body linear acceleration in Y dimension
-	- fBodyAccJerk-std()-Z: standard deviation value for FFT for jerk signals for body linear acceleration in Z dimension
-	- fBodyGyro-std()-X: standard deviation value for FFT for body angular velocity signals in X dimension
-	- fBodyGyro-std()-Y: standard deviation value for FFT for body angular velocity signals in Y dimension
-	- fBodyGyro-std()-Z: standard deviation value for FFT for body angular velocity signals in Z dimension
-	- fBodyAccMag-std(): standard deviation value for FFT for body acceleration signals' magnitude
-	- fBodyBodyAccJerkMag-std(): standard deviation value for FFT for jerk signals' magnitude for body linear acceleration
-	- fBodyBodyGyroMag-std(): standard deviation value for FFT for body angular velocity signals' magnitude
-	- fBodyBodyGyroJerkMag-std(): standard deviation value for FFT for jerk signals' magnitude for body angular velocity
+	- *tBodyAcc-std()-X*: standard deviation value for body acceleration signals in X dimension
+	- *tBodyAcc-std()-Y*: standard deviation value for body acceleration signals in Y dimension
+	- *tBodyAcc-std()-Z*: standard deviation value for body acceleration signals in Z dimension
+	- *tGravityAcc-std()-X*: standard deviation value for gravity acceleration signals in X dimension
+	- *tGravityAcc-std()-Y*: standard deviation value for gravity acceleration signals in Y dimension
+	- *tGravityAcc-std()-Z*: standard deviation value for gravity acceleration signals in Z dimension
+	- *tBodyAccJerk-std()-X*: standard deviation value for jerk signals for body linear acceleration in X dimension
+	- *tBodyAccJerk-std()-Y*: standard deviation value for jerk signals for body linear acceleration in Y dimension
+	- *tBodyAccJerk-std()-Z*: standard deviation value for jerk signals for body linear acceleration in Z dimension
+	- *tBodyGyro-std()-X*: standard deviation value for body angular velocity signals in X dimension
+	- *tBodyGyro-std()-Y*: standard deviation value for body angular velocity signals in Y dimension
+	- *tBodyGyro-std()-Z*: standard deviation value for body angular velocity signals in Z dimension
+	- *tBodyGyroJerk-std()-X*: standard deviation value for jerk signals for body angular velocity in X dimension
+	- *tBodyGyroJerk-std()-Y*: standard deviation value for jerk signals for body angular velocity in Y dimension
+	- *tBodyGyroJerk-std()-Z*: standard deviation value for jerk signals for body angular velocity in Z dimension
+	- *tBodyAccMag-std()*: standard deviation value for body acceleration signals' magnitude
+	- *tGravityAccMag-std()*: standard deviation value for gravity acceleration signals' magnitude
+	- *tBodyAccJerkMag-std()*: standard deviation value for jerk signals' magnitude for body linear acceleration
+	- *tBodyGyroMag-std()*: standard deviation value for body angular velocity signals' magnitude
+	- *tBodyGyroJerkMag-std()*: standard deviation value for jerk signals' magnitude for body linear acceleration
+	- *fBodyAcc-std()-X*: standard deviation value for Fast Fourier Transform (FFT) for body acceleration signals in X dimension
+	- *fBodyAcc-std()-Y*: standard deviation value for FFT for body acceleration signals in Y dimension
+	- *fBodyAcc-std()-Z*: standard deviation value for FFT for body acceleration signals in Z dimension
+	- *fBodyAccJerk-std()-X*: standard deviation value for FFT for jerk signals for body linear acceleration in X dimension
+	- *fBodyAccJerk-std()-Y*: standard deviation value for FFT for jerk signals for body linear acceleration in Y dimension
+	- *fBodyAccJerk-std()-Z*: standard deviation value for FFT for jerk signals for body linear acceleration in Z dimension
+	- *fBodyGyro-std()-X*: standard deviation value for FFT for body angular velocity signals in X dimension
+	- *fBodyGyro-std()-Y*: standard deviation value for FFT for body angular velocity signals in Y dimension
+	- *fBodyGyro-std()-Z*: standard deviation value for FFT for body angular velocity signals in Z dimension
+	- *fBodyAccMag-std()*: standard deviation value for FFT for body acceleration signals' magnitude
+	- *fBodyBodyAccJerkMag-std()*: standard deviation value for FFT for jerk signals' magnitude for body linear acceleration
+	- *fBodyBodyGyroMag-std()*: standard deviation value for FFT for body angular velocity signals' magnitude
+	- *fBodyBodyGyroJerkMag-std()*: standard deviation value for FFT for jerk signals' magnitude for body angular velocity
 <br>
