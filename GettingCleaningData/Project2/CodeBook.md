@@ -57,11 +57,16 @@ In this section, we describe the transformations performed on the data.<br>
 
 ### Data description:
 The list below presents the columns available in the tidy dataset:
+<br><br>
 
 - subject: identifier for the subject
+
 <br>
+
 - activity: categorical variable with the possible values: 1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING 6, LAYING
+
 <br>
+
 - The features' means in the same unit as the features (see features_info.txt for details on the features):
 	- tBodyAcc-mean()-X: mean value for body acceleration signals in X dimension
 	- tBodyAcc-mean()-Y: mean value for body acceleration signals in Y dimension
@@ -96,7 +101,9 @@ The list below presents the columns available in the tidy dataset:
 	- fBodyBodyAccJerkMag-mean(): mean value for FFT for jerk signals' magnitude for body linear acceleration
 	- fBodyBodyGyroMag-mean(): mean value for FFT for body angular velocity signals' magnitude
 	- fBodyBodyGyroJerkMag-mean(): mean value for FFT for jerk signals' magnitude for body angular velocity
+
 <br>
+
 - The features' standard deviations in the same unit as the features (see features_info.txt for details on the features):
 	- tBodyAcc-std()-X: standard deviation value for body acceleration signals in X dimension
 	- tBodyAcc-std()-Y: standard deviation value for body acceleration signals in Y dimension
@@ -131,4 +138,5 @@ The list below presents the columns available in the tidy dataset:
 	- fBodyBodyAccJerkMag-std(): standard deviation value for FFT for jerk signals' magnitude for body linear acceleration
 	- fBodyBodyGyroMag-std(): standard deviation value for FFT for body angular velocity signals' magnitude
 	- fBodyBodyGyroJerkMag-std(): standard deviation value for FFT for jerk signals' magnitude for body angular velocity
+
 <br>
