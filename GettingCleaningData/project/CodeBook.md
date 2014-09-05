@@ -3,9 +3,9 @@
 
 =========
 ### Introduction:
-This Code Book describes the "run_analysis.R" script which merges the train and test sets of the "UCI HAR Datasets" into a single data frame and, produces a tidy data set with the average of the mean and standard variation variables by subject and activity for each measurement.
+This Code Book describes the "run_analysis.R" script which merges the train and test sets of the "UCI HAR Datasets" into a single data frame and, produces a tidy data set with the average of the mean and standard variation variables by subject and activity for each measurement. This Code Book also describes the columns and features present in the tidy data set.
 
-*(Note: the below assumes that the working directory is the folder "UCI HAR Dataset", so all file paths are given in a relative form.)*
+*(Note: the below assumes that the working directory contains the folder "UCI HAR Dataset" (which in turn contains the "train" and "test" folders), so all file paths are given in a relative form.)*
 
 =========
 ### Pre-requisites:
