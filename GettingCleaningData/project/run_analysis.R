@@ -1,8 +1,10 @@
 # Source code for "Getting and Cleaning" Data class project
-# the code below assumes that the working directory contains two folders
+# the code below assumes that the working directory contains a folder
+# "UCI HAR Dataset", which in turn contains two folders:
 # - train: containing the training data
 # - test: containing the test data
 
+setwd("./UCI HAR Dataset")
 
 # loads the X for train dataset
 Xtrain.init <- read.table("train/X_train.txt", nrows = 100)
@@ -68,4 +70,4 @@ tidy.data <-aggregate(dataset[,keep.features], by=list(dataset$subject, dataset$
 colnames(tidy.data) <- c("subject", "activity", keep.features)
 
 # finally, writes tidy dataset into test file
-write.table(tidy.data, file="tidy_data_set.txt", row.names = FALSE)
+write.table(tidy.data, file="../tidy_data_set.txt", row.names = FALSE)
