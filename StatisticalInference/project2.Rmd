@@ -2,10 +2,9 @@
 title: "Statistical Inference Project - Part 2"
 author: "Mariame M"
 date: "September 11, 2014"
-output: pdf_document
+output: html_document
 ---
 
-###Introduction
 In this project, we will analyze the ToothGrowth data from the R 'datasets' package.
 This data set contains 60 observations and the following variables:  
 
@@ -13,8 +12,7 @@ This data set contains 60 observations and the following variables:
 - supp (factor): Supplement type (VC for ascorbic acid or OJ for orange juice) - this represents one explanatory variable;
 - dose (numeric): Dose in milligrams - this represents one explanatory variable.  
 
-
-####1. Load the ToothGrowth data and perform some basic exploratory data analyses:
+##1. Load the ToothGrowth data and perform some basic exploratory data analyses:  
 We first load the 'datasets' library and display the dimensions of the ToothGrowth data, as well as the count of observations by supplement type and dosage level:
 
 ```{r load}
@@ -23,7 +21,6 @@ library(datasets)
 library(ggplot2)
 
 # show basic description of data frame
-dim(ToothGrowth)
 table(ToothGrowth$supp, ToothGrowth$dose)
 ```
 
@@ -52,11 +49,10 @@ ggplot(ToothGrowth, aes(x=interaction(dose,supp), y=len, fill=supp)) +
     scale_fill_discrete(breaks=c("OJ","VC"))
 ```
   
-This plots gives us a first intuition that the supplement type OJ has a greater influence on tooth growth than the supplement type VC. However, it also seems that, as the dosage level gets higher, the difference between supplement types dsappears. Also, we see that the difference in median tooth growth is higher between the 0.5mg and 1.0mg than it is between the 1.0mg and 2.0mg, which could lead us to think that when the dosage reaches a certain level, the impact on tooth growth "slows down".  
+This plots gives us a first intuition that the supplement type OJ has a greater influence on tooth growth than the supplement type VC. However, it also seems that, as the dosage level gets higher, the difference between supplement types "slows down".  
 
 
-####2. Provide a basic summary of the data:
-
+##2. Provide a basic summary of the data:  
 The below code provides a summary of the data:
 
 ```{r summary}
@@ -66,10 +62,9 @@ summary(ToothGrowth)
 While 'dose' is a numeric variable, the above summary is not meaningful for that variable, it can really only take one of three values: 0.5, 1.0 or 2.0. A workaround would be to convert that variable as a factor so that the summary would only show the possible values for that variable.  
 
 
-####3. Use confidence intervals and hypothesis tests to compare tooth growth by supp and dose:
+##3. Use confidence intervals and hypothesis tests to compare tooth growth by supp and dose:  
 
-#####3.1. Test on Supplement Types Only
-
+###3.1. Test on Supplement Types Only:  
 First, ignoring the different dosages, we test the effect of the supplement type on tooth length.  
 
 Our null hypothesis H0 is that there is no difference in tooth growth between the group under VC supplement and the group under OJ supplement.  
@@ -86,8 +81,7 @@ With a confidence interval of [-0.171, 7.571] for the difference in tooth growth
 Therefore we conclude that the difference in tooth growth between the OJ guinea pigs and the VC guinea pigs can be due to chance.  
 
 
-#####3.2. Test on Dosage Levels Only
-
+###3.2. Test on Dosage Levels Only:  
 In this second test, we ignore the type of supplement and only account for the dosage levels. To that purpose, we need to create three separate data sets to compare dosage levels two-by-two:  
 
 - one data set testing for the difference in tooth growth between the 0.5mg vs 1.0mg dosages;
@@ -118,10 +112,7 @@ Based on the above results, we infer that:
 - for 0.5mg vs 2.0mg dosages, with a confidence interval of [-18.16, -12.83], we can reject the null hypothesis in favor of the alternative hypothesis and, conclude that there is a significant difference in tooth growth between the two dosage levels.
 - for 1.0mg vs 2.0mg dosages, with a confidence interval of [-9.00, -3.73], we can reject the null hypothesis in favor of the alternative hypothesis and, conclude that there is a significant difference in tooth growth between the two dosage levels.  
 
-
-
-#####3.3. Test on Supplement Types and Dosage Levels
-
+###3.3. Test on Supplement Types and Dosage Levels:  
 Finally, we test each dosage level separately to see if for a given dosage level, a significant difference in tooth growth between the two supplement types can be observed. This test allows us to compare supplement types while holding the dosage level constant.  
 
 Here again, we need to first create three separate data sets to compare supplement types across dosage levels:  
@@ -156,8 +147,7 @@ Based on the above results, we infer that:
 
 This means that for low dosage levels, we do see a difference in tooth growth average (i.e. mean for the group in OJ minus mean for the group in VC) by supplement type, and that as the dosage level gets higher that difference gets smaller.
 
-####4. State the conclusions and the assumptions needed for the conclusions:
-
+##4. State the assumptions and the conclusions:  
 Below are the assumptions we used in this study:  
 
 - each observation is independent from the other, meaning random assignment was used to assign the guinea pigs to each supplement type and to each dosage level - this is an important assumption as this allows us to conclude that any difference observed is due to one of the explanatory variable, and not genetic for example if we were using guinea pigs that are related;
